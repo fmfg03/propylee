@@ -1,2 +1,52 @@
 User-agent: *
 Allow: /
+
+# Protect private and utility areas
+Disallow: /admin/
+Disallow: /login/
+Disallow: /tmp/
+Disallow: /temp/
+Disallow: /test/
+Disallow: /cgi-bin/
+
+# Prevent crawling of non-content files
+Disallow: /*.js$
+Disallow: /*.css$
+Disallow: /*.php$
+
+# Handle old content with SEO issues
+# Allow crawling so search engines can find them
+# But manage with canonicals in the HTML pages
+Allow: /site2010/
+Allow: /liens-BK/
+Allow: /evo-consilience/
+Allow: /EAU/
+Allow: /list/
+Allow: /Home.1.html
+Allow: /Veille2008/
+Allow: /EVOLUTION-V/
+
+# Explicitly mark www vs non-www preference (matching canonical)
+Host: e-propylee.com
+
+# For specialized crawlers that can heavily tax servers
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: bingbot
+Allow: /
+Crawl-delay: 2
+
+# Block aggressive crawlers that might be causing classification issues
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+# Sitemap for better crawling
+Sitemap: https://e-propylee.com/sitemap.xml
