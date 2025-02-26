@@ -38,7 +38,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
     
-    <!-- JSON-LD Structured Data - Add right here, before the closing head tag -->
+    <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -131,9 +131,54 @@
             color: #333;
             background: #f8f9fa;
         }
-        /* rest of your CSS */
+        main {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: #34495e;
+            margin-bottom: 2rem;
+        }
+        .description {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+        .links {
+            margin: 2rem 0;
+            font-size: 0.9rem;
+        }
+        .links a {
+            color: #3498db;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: 3rem;
+            font-size: 0.9rem;
+            color: #888;
+        }
     </style>
-</head>
 </head>
 <body>
     <main>
