@@ -1,52 +1,120 @@
-User-agent: *
-Allow: /
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-# Protect private and utility areas
-Disallow: /admin/
-Disallow: /login/
-Disallow: /tmp/
-Disallow: /temp/
-Disallow: /test/
-Disallow: /cgi-bin/
-
-# Prevent crawling of non-content files
-Disallow: /*.js$
-Disallow: /*.css$
-Disallow: /*.php$
-
-# Handle old content with SEO issues
-# Allow crawling so search engines can find them
-# But manage with canonicals in the HTML pages
-Allow: /site2010/
-Allow: /liens-BK/
-Allow: /evo-consilience/
-Allow: /EAU/
-Allow: /list/
-Allow: /Home.1.html
-Allow: /Veille2008/
-Allow: /EVOLUTION-V/
-
-# Explicitly mark www vs non-www preference (matching canonical)
-Host: e-propylee.com
-
-# For specialized crawlers that can heavily tax servers
-User-agent: Googlebot
-Allow: /
-Crawl-delay: 1
-
-User-agent: bingbot
-Allow: /
-Crawl-delay: 2
-
-# Block aggressive crawlers that might be causing classification issues
-User-agent: MJ12bot
-Disallow: /
-
-User-agent: SemrushBot
-Crawl-delay: 10
-
-User-agent: AhrefsBot
-Crawl-delay: 10
-
-# Sitemap for better crawling
-Sitemap: https://e-propylee.com/sitemap.xml
+    <!-- Main Pages -->
+    <url>
+        <loc>https://e-propylee.com/</loc>
+        <lastmod>2025-02-25</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- Pages with backlinks that need to be properly classified -->
+    <url>
+        <loc>https://e-propylee.com/list/compact-knife-is-simply-irreplaceable</loc>
+        <lastmod>2025-02-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://e-propylee.com/index.html</loc>
+        <lastmod>2025-02-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://e-propylee.com/Home.1.html</loc>
+        <lastmod>2025-02-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Site2010 Directory -->
+    <url>
+        <loc>https://e-propylee.com/site2010/web/index.jsp</loc>
+        <lastmod>2025-02-25</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <!-- Liens-BK Directory -->
+    <url>
+        <loc>https://e-propylee.com/liens-BK/index.html</loc>
+        <lastmod>2025-02-25</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://e-propylee.com/liens-BK/veilleetdonnees/tree.html</loc>
+        <lastmod>2025-02-25</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <!-- Evo-consilience Directory -->
+    <url>
+        <loc>https://e-propylee.com/evo-consilience/documents/667286AD195A29B2DA7D19E2E6AEEA9A2CB91380.html</loc>
+        <lastmod>2025-02-25</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://e-propylee.com/evo-consilience/documents/7B5FCFCC83BA33F9B9E4FFB0E3A0ED071755DE04.html</loc>
+        <lastmod>2025-02-25</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <!-- EAU Directory -->
+    <url>
+        <loc>https://e-propylee.com/EAU/indexeau.html</loc>
+        <lastmod>2025-02-25</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <!-- Veille2008 Directory -->
+    <url>
+        <loc>https://e-propylee.com/Veille2008/</loc>
+        <lastmod>2025-02-25</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.4</priority>
+    </url>
+    
+    <!-- EVOLUTION-V Directory -->
+    <url>
+        <loc>https://e-propylee.com/EVOLUTION-V/</loc>
+        <lastmod>2025-02-25</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.4</priority>
+    </url>
+    
+    <!-- External Properties (linked from main site) -->
+    <url>
+        <loc>https://agentius.ai</loc>
+        <lastmod>2025-02-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://hubmate.co</loc>
+        <lastmod>2025-02-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://gdetails.com</loc>
+        <lastmod>2025-02-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+</urlset>
