@@ -1,0 +1,81 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://e-propylee.com/#organization",
+      "name": "E-Propylee",
+      "url": "https://e-propylee.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://e-propylee.com/#logo",
+        "inLanguage": "en-US",
+        "url": "https://e-propylee.com/images/logo.png",
+        "contentUrl": "https://e-propylee.com/images/logo.png",
+        "width": 500,
+        "height": 500,
+        "caption": "E-Propylee"
+      },
+      "description": "Enterprise-grade agentic artificial intelligence and automation technology for digital transformation.",
+      "sameAs": [
+        "https://agentius.ai",
+        "https://hubmate.co",
+        "https://gdetails.com"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://e-propylee.com/#website",
+      "url": "https://e-propylee.com/",
+      "name": "E-Propylee",
+      "publisher": {
+        "@id": "https://e-propylee.com/#organization"
+      },
+      "inLanguage": "en-US",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://e-propylee.com/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://e-propylee.com/#webpage",
+      "url": "https://e-propylee.com/",
+      "name": "E-Propylee | Agentic AI & Automation Solutions",
+      "isPartOf": {
+        "@id": "https://e-propylee.com/#website"
+      },
+      "about": {
+        "@id": "https://e-propylee.com/#organization"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://e-propylee.com/#logo"
+      },
+      "datePublished": "2023-01-01T00:00:00+00:00",
+      "dateModified": "2025-02-25T00:00:00+00:00",
+      "description": "Enterprise agentic AI, automation technology, and intelligent systems for digital transformation",
+      "inLanguage": "en-US",
+      "potentialAction": [
+        {
+          "@type": "ReadAction",
+          "target": [
+            "https://e-propylee.com/"
+          ]
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://e-propylee.com/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://e-propylee.com/"
+        }
+      ]
+    }
+  ]
+}
