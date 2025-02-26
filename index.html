@@ -31,19 +31,94 @@
     <!-- XML Sitemap Reference -->
     <link rel="sitemap" type="application/xml" href="https://e-propylee.com/sitemap.xml">
     
-    <!-- Structured Data for Rich Snippets -->
+    <!-- Web App Manifest and Icons -->
+    <link rel="manifest" href="/manifest.json">
+    <link rel="shortcut icon" href="/icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    
+    <!-- JSON-LD Structured Data - Add right here, before the closing head tag -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
-      "url": "https://e-propylee.com",
-      "name": "E-Propylee",
-      "logo": "https://e-propylee.com/images/logo.png",
-      "description": "Enterprise-grade agentic artificial intelligence and automation technology for digital transformation.",
-      "sameAs": [
-        "https://agentius.ai",
-        "https://hubmate.co",
-        "https://gdetails.com"
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://e-propylee.com/#organization",
+          "name": "E-Propylee",
+          "url": "https://e-propylee.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "@id": "https://e-propylee.com/#logo",
+            "inLanguage": "en-US",
+            "url": "https://e-propylee.com/images/logo.png",
+            "contentUrl": "https://e-propylee.com/images/logo.png",
+            "width": 500,
+            "height": 500,
+            "caption": "E-Propylee"
+          },
+          "description": "Enterprise-grade agentic artificial intelligence and automation technology for digital transformation.",
+          "sameAs": [
+            "https://agentius.ai",
+            "https://hubmate.co",
+            "https://gdetails.com"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://e-propylee.com/#website",
+          "url": "https://e-propylee.com/",
+          "name": "E-Propylee",
+          "publisher": {
+            "@id": "https://e-propylee.com/#organization"
+          },
+          "inLanguage": "en-US",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://e-propylee.com/?s={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://e-propylee.com/#webpage",
+          "url": "https://e-propylee.com/",
+          "name": "E-Propylee | Agentic AI & Automation Solutions",
+          "isPartOf": {
+            "@id": "https://e-propylee.com/#website"
+          },
+          "about": {
+            "@id": "https://e-propylee.com/#organization"
+          },
+          "primaryImageOfPage": {
+            "@id": "https://e-propylee.com/#logo"
+          },
+          "datePublished": "2023-01-01T00:00:00+00:00",
+          "dateModified": "2025-02-25T00:00:00+00:00",
+          "description": "Enterprise agentic AI, automation technology, and intelligent systems for digital transformation",
+          "inLanguage": "en-US",
+          "potentialAction": [
+            {
+              "@type": "ReadAction",
+              "target": [
+                "https://e-propylee.com/"
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://e-propylee.com/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://e-propylee.com/"
+            }
+          ]
+        }
       ]
     }
     </script>
@@ -56,54 +131,9 @@
             color: #333;
             background: #f8f9fa;
         }
-        main {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-            color: #2c3e50;
-        }
-        h2 {
-            font-size: 1.5rem;
-            font-weight: 400;
-            color: #34495e;
-            margin-bottom: 2rem;
-        }
-        .description {
-            font-size: 1.1rem;
-            color: #666;
-            max-width: 600px;
-            margin: 0 auto 2rem;
-        }
-        .links {
-            margin: 2rem 0;
-            font-size: 0.9rem;
-        }
-        .links a {
-            color: #3498db;
-            text-decoration: none;
-            margin: 0 1rem;
-        }
-        .links a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            margin-top: 3rem;
-            font-size: 0.9rem;
-            color: #888;
-        }
+        /* rest of your CSS */
     </style>
+</head>
 </head>
 <body>
     <main>
